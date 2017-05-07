@@ -90,16 +90,16 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="MySQL权限初探权限级别(mysql数据库中的六张表分别对应着不同的级别) user 全局级别 host 5.6以后已不用 db 库级别 table_priv 表级别 columns_priv 列级别 procs_priv 存储过程和存储函数级别 proxies_priv 代理级别  用户名@主机 ( user 即账号 ) 用户名: 不能超过16个字符 主机: IP 主机名 hongrm.cn">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/05/05/hello-world/index.html">
+<meta property="og:title" content="mysql-priv">
+<meta property="og:url" content="http://yoursite.com/2017/05/07/mysql/mysql-priv/index.html">
 <meta property="og:site_name" content="点滴成就梦想">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-05-05T13:04:55.584Z">
+<meta property="og:description" content="MySQL权限初探权限级别(mysql数据库中的六张表分别对应着不同的级别) user 全局级别 host 5.6以后已不用 db 库级别 table_priv 表级别 columns_priv 列级别 procs_priv 存储过程和存储函数级别 proxies_priv 代理级别  用户名@主机 ( user 即账号 ) 用户名: 不能超过16个字符 主机: IP 主机名 hongrm.cn">
+<meta property="og:updated_time" content="2017-05-06T16:41:39.415Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="mysql-priv">
+<meta name="twitter:description" content="MySQL权限初探权限级别(mysql数据库中的六张表分别对应着不同的级别) user 全局级别 host 5.6以后已不用 db 库级别 table_priv 表级别 columns_priv 列级别 procs_priv 存储过程和存储函数级别 proxies_priv 代理级别  用户名@主机 ( user 即账号 ) 用户名: 不能超过16个字符 主机: IP 主机名 hongrm.cn">
 
 
 
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/05/05/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/07/mysql/mysql-priv/"/>
 
 
 
 
 
-  <title>Hello World | 点滴成就梦想</title>
+  <title>mysql-priv | 点滴成就梦想</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -184,7 +184,7 @@
       </a>
     </div>
       
-        <h1 class="site-subtitle" itemprop="description"></h1>
+        <h1 class="site-subtitle" itemprop="description">比你优秀的人都还在不断地学习,你又有什么理由选择安逸呢?</h1>
       
   </div>
 
@@ -243,16 +243,6 @@
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
 
       
     </ul>
@@ -282,7 +272,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/05/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/07/mysql/mysql-priv/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Hongrm">
@@ -299,7 +289,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Hello World</h2>
+          <h2 class="post-title" itemprop="name headline">mysql-priv</h2>
         
 
         <div class="post-meta">
@@ -311,8 +301,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-05T18:41:34+08:00">
-                2017-05-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-07T00:30:43+08:00">
+                2017-05-07
               </time>
             
 
@@ -322,6 +312,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mysql/" itemprop="url" rel="index">
+                    <span itemprop="name">mysql</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -329,7 +341,7 @@
 
           
           
-             <span id="/2017/05/05/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
+             <span id="/2017/05/07/mysql/mysql-priv/" class="leancloud_visitors" data-flag-title="mysql-priv">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -357,15 +369,27 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h3 id="MySQL权限初探"><a href="#MySQL权限初探" class="headerlink" title="MySQL权限初探"></a>MySQL权限初探</h3><h4 id="权限级别-mysql数据库中的六张表分别对应着不同的级别"><a href="#权限级别-mysql数据库中的六张表分别对应着不同的级别" class="headerlink" title="权限级别(mysql数据库中的六张表分别对应着不同的级别)"></a>权限级别(<code>mysql</code>数据库中的六张表分别对应着不同的级别)</h4><ul>
+<li>user 全局级别</li>
+<li>host 5.6以后已不用</li>
+<li>db 库级别</li>
+<li>table_priv 表级别</li>
+<li>columns_priv 列级别</li>
+<li>procs_priv 存储过程和存储函数级别</li>
+<li>proxies_priv 代理级别</li>
+</ul>
+<h5 id="用户名-主机-user-即账号"><a href="#用户名-主机-user-即账号" class="headerlink" title="用户名@主机 ( user 即账号 )"></a>用户名@主机 ( <code>user</code> 即账号 )</h5><ul>
+<li>用户名: 不能超过16个字符</li>
+<li>主机:<ul>
+<li>IP</li>
+<li>主机名 hongrm.cn</li>
+<li>网络地址  192.168.0.0,  %代表所有主机 , 网络地址可以用 _ 或 % 来表示</li>
+</ul>
+</li>
+</ul>
+<h4 id="授权"><a href="#授权" class="headerlink" title="授权"></a>授权</h4><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line"> 一般修改权限之后需要 FLUSH PRIVILEGES,让服务器重读上面的六张表</div><div class="line"> 客户端需重新连接服务器,因为在不同会话中,所以涉及到的权限表对旧的会话不可见</div><div class="line">*/</div><div class="line">-- 查询 grant 的基本用法, [] 表示可选的配置</div><div class="line">mysql&gt; HELP GRANT</div><div class="line">Name: 'GRANT'</div><div class="line">Description:</div><div class="line">Syntax:</div><div class="line">GRANT</div><div class="line">    priv_type [(column_list)]</div><div class="line">      [, priv_type [(column_list)]] ...</div><div class="line">    ON [object_type] priv_level</div><div class="line">    TO user_specification [, user_specification] ...</div><div class="line">    [REQUIRE &#123;NONE | tsl_option [[AND] tsl_option] ...&#125;]</div><div class="line">    [WITH &#123;GRANT OPTION | resource_option&#125; ...]</div><div class="line"></div><div class="line">GRANT PROXY ON user_specification</div><div class="line">    TO user_specification [, user_specification] ...</div><div class="line">    [WITH GRANT OPTION]</div><div class="line"></div><div class="line">-- 当授权的级别涉及到的表和存储过程,存储函数的命名一样时,可以用object_type来唯一指定</div><div class="line">object_type: &#123;</div><div class="line">    TABLE</div><div class="line">  | FUNCTION</div><div class="line">  | PROCEDURE</div><div class="line">&#125;</div><div class="line"></div><div class="line">-- 对应上面的权限级别 (列级别在priv_type后面紧跟着的 (columns_list) 中定义)</div><div class="line">priv_level: &#123;</div><div class="line">    *</div><div class="line">  | *.*</div><div class="line">  | db_name.*</div><div class="line">  | db_name.tbl_name</div><div class="line">  | tbl_name</div><div class="line">-- 存储过程和函数</div><div class="line">  | db_name.routine_name</div><div class="line">&#125;</div><div class="line"></div><div class="line">user_specification:</div><div class="line">    user [ auth_option ]  -- user 对应上边的账号</div><div class="line"></div><div class="line">-- 认证,一般是账号密码</div><div class="line">auth_option: &#123;     # Before MySQL 5.7.6</div><div class="line">    IDENTIFIED BY 'auth_string'</div><div class="line">  | IDENTIFIED BY PASSWORD 'hash_string'</div><div class="line">  | IDENTIFIED WITH auth_plugin</div><div class="line">  | IDENTIFIED WITH auth_plugin AS 'hash_string'</div><div class="line">&#125;</div><div class="line"></div><div class="line">auth_option: &#123;     # As of MySQL 5.7.6</div><div class="line">    IDENTIFIED BY 'auth_string'</div><div class="line">  | IDENTIFIED BY PASSWORD 'hash_string'</div><div class="line">  | IDENTIFIED WITH auth_plugin</div><div class="line">  | IDENTIFIED WITH auth_plugin BY 'auth_string'</div><div class="line">  | IDENTIFIED WITH auth_plugin AS 'hash_string'</div><div class="line">&#125;</div><div class="line"></div><div class="line">tsl_option: &#123;</div><div class="line">    SSL</div><div class="line">  | X509</div><div class="line">  | CIPHER 'cipher'</div><div class="line">  | ISSUER 'issuer'</div><div class="line">  | SUBJECT 'subject'</div><div class="line">&#125;</div><div class="line"></div><div class="line">resource_option: &#123;</div><div class="line">  | MAX_QUERIES_PER_HOUR count</div><div class="line">  | MAX_UPDATES_PER_HOUR count</div><div class="line">  | MAX_CONNECTIONS_PER_HOUR count</div><div class="line">  | MAX_USER_CONNECTIONS count</div><div class="line">&#125;</div><div class="line"></div><div class="line">-- GRANT 示例</div><div class="line">CREATE USER 'jeffrey'@'localhost' IDENTIFIED BY 'mypass';</div><div class="line">GRANT ALL ON db1.* TO 'jeffrey'@'localhost';</div><div class="line">GRANT SELECT ON db2.invoice TO 'jeffrey'@'localhost';</div><div class="line">ALTER USER 'jeffrey'@'localhost' WITH MAX_QUERIES_PER_HOUR 90;</div><div class="line"></div><div class="line">-- 附加,上面的 HELP GRANT 没有这个</div><div class="line">priv_type: &#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="收回授权"><a href="#收回授权" class="headerlink" title="收回授权"></a>收回授权</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">-- 查询 REVOKE 的基本用法</span></div><div class="line">Name: '<span class="keyword">REVOKE</span><span class="string">'</span></div><div class="line">Description:</div><div class="line">Syntax:</div><div class="line">REVOKE</div><div class="line">    priv_type [(column_list)]</div><div class="line">      [, priv_type [(column_list)]] ...</div><div class="line">    ON [object_type] priv_level</div><div class="line">    FROM user [, user] ...</div><div class="line"></div><div class="line">REVOKE ALL PRIVILEGES, GRANT OPTION</div><div class="line">    FROM user [, user] ...</div><div class="line"></div><div class="line">REVOKE PROXY ON user</div><div class="line">    FROM user [, user] ...</div></pre></td></tr></table></figure>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>授权较难的主要还是在priv_type (权限类型)的把握上,权限级别还好</p>
 
       
     </div>
@@ -402,14 +426,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/05/05/面试/viewing-mysql/" rel="next" title="mysql查询">
+                <i class="fa fa-chevron-left"></i> mysql查询
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/05/05/name/" rel="prev" title="name">
-                name <i class="fa fa-chevron-right"></i>
+              <a href="/2017/05/07/mysql/mysql-log/" rel="prev" title="mysql-log">
+                mysql-log <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -482,7 +510,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -493,7 +521,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -506,6 +534,17 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/happyshrm" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
           
         </div>
 
@@ -530,7 +569,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL权限初探"><span class="nav-number">1.</span> <span class="nav-text">MySQL权限初探</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#权限级别-mysql数据库中的六张表分别对应着不同的级别"><span class="nav-number">1.1.</span> <span class="nav-text">权限级别(mysql数据库中的六张表分别对应着不同的级别)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#用户名-主机-user-即账号"><span class="nav-number">1.1.1.</span> <span class="nav-text">用户名@主机 ( user 即账号 )</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#授权"><span class="nav-number">1.2.</span> <span class="nav-text">授权</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#收回授权"><span class="nav-number">1.3.</span> <span class="nav-text">收回授权</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">1.4.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
             
 
           </div>
